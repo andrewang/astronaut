@@ -27,7 +27,7 @@ public class ia1 : MonoBehaviour {
 		}
 
 		if(hayObstaculo()){
-			salta();
+			mediavuelta();
 		}
 
 
