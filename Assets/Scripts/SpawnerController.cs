@@ -5,7 +5,12 @@ public class SpawnerController : MonoBehaviour {
 	public GameObject spawnObject;
 	
 	void generaCaja(){
+		var position = transform.position;
 
-		Instantiate (spawnObject, transform.position, transform.rotation);
+		Instantiate (spawnObject, position, transform.rotation);
+		position.x += 1;
+		Instantiate (spawnObject, position, transform.rotation);
+		position.x += 1;
+		Instantiate (spawnObject, position, transform.rotation);
 	}
 }

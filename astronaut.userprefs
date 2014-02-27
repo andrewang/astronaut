@@ -1,14 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FlagController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ia1.cs">
     <Files>
+      <File FileName="Assets\Scripts\SpawnerController.cs" Line="13" Column="18" />
       <File FileName="Assets\Scripts\FlagController.cs" Line="27" Column="5" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="60" Column="21" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
       <File FileName="..\..\..\Desktop\Scripts\PlayerPhysics.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\HealthScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\BotonController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\WaterController.cs" Line="26" Column="17" />
-      <File FileName="Assets\Scripts\SpawnerController.cs" Line="7" Column="17" />
+      <File FileName="Assets\Scripts\BotonController.cs" Line="19" Column="20" />
+      <File FileName="Assets\Scripts\WaterController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpawnerController.cs" Line="16" Column="2" />
+      <File FileName="Assets\Scripts\ia1.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
