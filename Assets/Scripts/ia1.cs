@@ -6,6 +6,7 @@ public class ia1 : MonoBehaviour {
 	public float velocidad = 1f;
 	public float maxSpeed = 3f;
 	public float jumpForce = 30f;
+	public float enemyDamage = 10f;
 	private int right = 1;
 
 	// Use this for initialization
@@ -15,9 +16,7 @@ public class ia1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
-		
+	
 		if (!haySuelo()) { 
 			mediavuelta();
 		}else{
@@ -30,10 +29,17 @@ public class ia1 : MonoBehaviour {
 			salta();
 		}
 
+	}
 
-		               
-		
+	void OnCollisionEnter2D(Collision2D col){
+		var colPos = col.transform.position;
+		var enemyPos = transform.position;
+		var _force = new Vector2(colPos.x - enemyPos.x, colPos.y - enemyPos.y);
 
+		if (col.gameObject.tag == "Player") {
+			col.transform.SendMessage("damage",enemyDamage);
+			col.gameObject.rigidbody2D.AddForce(_force*500f);
+		}
 	}
 
 	RaycastHit2D haySuelo(){
@@ -53,10 +59,8 @@ public class ia1 : MonoBehaviour {
 			var rayPos = transform.position;
 			rayPos.x += 1 * right;
 			var rayDir = transform.right * right * 0.2f;
-			
-			
-			
-		RaycastHit2D hit = Physics2D.Raycast(rayPos, rayDir, 0.2f, 1 << LayerMask.NameToLayer("Item"));
+
+			RaycastHit2D hit = Physics2D.Raycast(rayPos, rayDir, 0.2f, 1 << LayerMask.NameToLayer("Item"));
 			Debug.DrawRay(rayPos, rayDir, Color.green);
 			
 			return hit;
