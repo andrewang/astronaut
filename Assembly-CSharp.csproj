@@ -46,13 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BotonController.cs" />
-     <Compile Include="Assets\Scripts\FlagController.cs" />
-     <Compile Include="Assets\Scripts\HealthScript.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\SpawnerController.cs" />
-     <Compile Include="Assets\Scripts\WaterController.cs" />
-     <Compile Include="Assets\Scripts\ia1.cs" />
+     <Compile Include="Assets\Scripts\pmarin\BotonController.cs" />
+     <Compile Include="Assets\Scripts\pmarin\FlagController.cs" />
+     <Compile Include="Assets\Scripts\pmarin\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\pmarin\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\pmarin\SpawnerController.cs" />
+     <Compile Include="Assets\Scripts\pmarin\WaterController.cs" />
+     <Compile Include="Assets\Scripts\pmarin\ia1.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
