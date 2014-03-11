@@ -398,7 +398,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 129244635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.32635927, y: 1.10761642, z: 0}
+  m_LocalPosition: {x: -1.40462375, y: -1.00788975, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -410,10 +410,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 129244635}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09256618dbadd39439ba46950fe774b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 2899ad40d1e9adc4ab37472d62376730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dalay: 3
+  delay: 3
+  plataforma: {fileID: 1797922046}
 --- !u!1 &145229290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,8 +1935,8 @@ GameObject:
   - 4: {fileID: 457531072}
   - 212: {fileID: 457531071}
   - 95: {fileID: 457531070}
-  - 114: {fileID: 457531074}
   - 58: {fileID: 457531073}
+  - 114: {fileID: 457531074}
   m_Layer: 0
   m_Name: Flag
   m_TagString: Untagged
@@ -2010,10 +2011,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 457531069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b985d3d532e00254cbdfbaf0fde11150, type: 3}
+  m_Script: {fileID: 11500000, guid: 19a923f93fb512443a6196dd012b4334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: {fileID: 518662674}
+  spawner: {fileID: 0}
 --- !u!1 &466720598
 GameObject:
   m_ObjectHideFlags: 0
@@ -8610,8 +8611,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1797922047}
   - 61: {fileID: 1797922048}
+  - 114: {fileID: 1797922049}
   m_Layer: 8
-  m_Name: Suelo1
+  m_Name: Plataforma
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8645,6 +8647,21 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 4.13999987, y: .600000024}
   m_Center: {x: 1.42999995, y: 0}
+--- !u!114 &1797922049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1797922046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64a2233944ee7f1459ecdd0508633e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ejeY: 2
+  delay: 1
+  pause: 1
+  auto: 0
 --- !u!1 &1804461300
 GameObject:
   m_ObjectHideFlags: 0

@@ -49,10 +49,12 @@
      <Compile Include="Assets\Scripts\pmarin\BotonController.cs" />
      <Compile Include="Assets\Scripts\pmarin\FlagController.cs" />
      <Compile Include="Assets\Scripts\pmarin\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\pmarin\PlataformaScript.cs" />
      <Compile Include="Assets\Scripts\pmarin\PlayerController.cs" />
      <Compile Include="Assets\Scripts\pmarin\SpawnerController.cs" />
      <Compile Include="Assets\Scripts\pmarin\WaterController.cs" />
      <Compile Include="Assets\Scripts\pmarin\ia1.cs" />
+     <Compile Include="Assets\Scripts\pmarin\monedaScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

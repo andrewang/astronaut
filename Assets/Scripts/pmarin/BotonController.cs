@@ -3,10 +3,11 @@ using System.Collections;
 
 public class BotonController : MonoBehaviour {
 
-	public float dalay = 3f; 
+	public float delay = 3f; 
 	private float reactiveTime = 0f;
 	private bool pulsate = false;
 	Animator anim;
+	public GameObject plataforma;
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -25,10 +26,8 @@ public class BotonController : MonoBehaviour {
 		if (col.gameObject.transform.tag == "Player"){
 			anim.SetBool ("pulse", true);
 			pulsate = true;
-
-			reactiveTime = Time.time + dalay;
-
-			Debug.Log(reactiveTime);
+			plataforma.SendMessage("activar",true);
+			reactiveTime = Time.time + delay;
 		}
 	}
 }
