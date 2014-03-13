@@ -71,11 +71,16 @@ public class PlayerController_Alberto : MonoBehaviour {
 		// If the player should jump...
 		if(jump)
 		{    
+			var v = new Vector2(0, 0);
+			rigidbody2D.velocity = v;
+			
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 			jump = false;
 			anim.SetBool("jump",false);
+			
+			grounded = false;
+			
 		}
-
 		/*if(onWater ){
 			//rigidbody2D.AddForce(Vector2.up);
 		}else{

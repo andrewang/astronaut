@@ -4,40 +4,68 @@ using System.Collections;
 public class PlataformaScript_Alberto : MonoBehaviour {
 	public float ejeY = 2f;
 	public float delay = 1f; 
-	private float origen;
-	private float destino;
+	public float ejeX = 2f;
+	private bool _right = true; 
+	private float origeny;
+	private float destinoy;
+	private float destinox;
+	private float origenx;
 	private bool _up = true;
-	public bool pause = true;
+	public bool pausex = true;
+	public bool pausey = true;
 	private float waitTime = 0; 
 	public bool auto =false;
 	// Use this for initialization
 	void Start () {
-		origen = transform.position.y;
-		destino = transform.position.y + ejeY;
+		origeny = transform.position.y;
+		destinoy = transform.position.y + ejeY;
+		origenx = transform.position.x;
+		destinox = transform.position.x + ejeX;
 	}
 	// Update is called once per frame
 	void Update () {
-		if (auto && pause && Time.time < waitTime) {
-			pause = false;
+		//VERTICAL
+		if (auto && pausey && Time.time < waitTime) {
+			pausey = false;
 		}
 
-		if(_up && !pause){
+		if(_up && !pausey){
 			transform.Translate (Vector3.up *Time.deltaTime);
-		}else if ( !_up && !pause){
+		}else if ( !_up && !pausey){
 			transform.Translate (Vector3.up *Time.deltaTime * -1);
 		}
-		if (transform.position.y > destino && !pause) {
+		if (Mathf.Abs(transform.position.y) > Mathf.Abs(destinoy) && !pausey) {
 			_up = false;
-			pause = true;
+			if(!auto) pausey = true;
 			waitTime = Time.time + delay;
-		}else if (transform.position.y < origen && !pause){
+		}else if Mathf.Abs((transform.position.y) < (origeny) && !pausey){
 			_up = true;
-			pause = true;
+			if(!auto)pausey = true;
+			waitTime = Time.time + delay;
+		}
+		//HORIZONTAL
+		if (auto && pausex && Time.time < waitTime) {
+			pausex = false;
+		}
+		
+		if(_right && !pausex){
+			transform.Translate (Vector3.right *Time.deltaTime);
+		}else if ( !_right && !pausex){
+			transform.Translate (Vector3.right *Time.deltaTime * -1);
+		}
+		if Mathf.Abs((transform.position.x) > (destinox) && !pausex) {
+			_right = false;
+			if(!auto)pausex = true;
+			waitTime = Time.time + delay;
+		}else if Mathf.Abs((transform.position.x) < (origenx) && !pausex){
+			_right = true;
+			if(!auto)pausex = true;
 			waitTime = Time.time + delay;
 		}
 	}
 
   void activar(){
-		pause = false;
+		pausex = false;
+		pausey = false;
 	}
 }
