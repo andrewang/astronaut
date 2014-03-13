@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pilar_CoingUpScript : MonoBehaviour {
+public class pilar_CoingScript : MonoBehaviour {
 	public AudioClip LevelUp;
 	public static bool dead;
 	float resetTimer = 0 ; 
