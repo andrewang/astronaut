@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class VueloController : MonoBehaviour {
+public class pilar_VueloController : MonoBehaviour {
 
 	public Vector2 speed = new Vector2(30, 30);
 	public Vector2 direction = new Vector2(-1, 0);
