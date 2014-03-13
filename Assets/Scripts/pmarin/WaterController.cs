@@ -23,9 +23,9 @@ public class WaterController : MonoBehaviour {
 			
 		{
 			Debug.Log("OnWater");
-			if(!onWater){
-				rigidbody2D.velocity = Vector2.zero;
-			}
+			/*if(!onWater){
+				//rigidbody2D.velocity = Vector2.zero;
+			}*/
 			onWater = true;
 
 			rigidbody2D.gravityScale = waterGravity;
