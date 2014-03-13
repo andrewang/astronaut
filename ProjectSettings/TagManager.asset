@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ground
   - escalera
+  - Coins
+  - Player
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -19,9 +21,9 @@ TagManager:
   Builtin Layer 7: 
   User Layer 8: Ground
   User Layer 9: Item
-  User Layer 10: 
-  User Layer 11: 
-  User Layer 12: 
+  User Layer 10: Enemy
+  User Layer 11: Item
+  User Layer 12: Coins
   User Layer 13: 
   User Layer 14: 
   User Layer 15: 
@@ -50,6 +52,10 @@ TagManager:
     userID: 3
     uniqueID: 3698598671
     locked: 0
+  - name: Water
+    userID: 4
+    uniqueID: 2828789977
+    locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
@@ -58,7 +64,7 @@ TagManager:
     userID: 2
     uniqueID: 4151237447
     locked: 0
-  - name: 
-    userID: 4
-    uniqueID: 2828789977
+  - name: Others
+    userID: 5
+    uniqueID: 500560785
     locked: 0
