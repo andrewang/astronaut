@@ -74,6 +74,7 @@ public class PlayerController : MonoBehaviour {
 		// If the player should jump...
 		if(jump)
 		{    
+			rigidbody2D.velocity = Vector2.zero;
 			rigidbody2D.AddForce(new Vector2(0f, jumpForce));
 			jump = false;
 			anim.SetBool("jump",false);
