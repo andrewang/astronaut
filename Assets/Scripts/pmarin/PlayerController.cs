@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour {
 			grounded = false;
 		}
 
+
+
 		if (rigidbody2D.velocity.y == 0f) {
 						anim.SetBool ("ground", true);
 			grounded = true;
