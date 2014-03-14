@@ -17,6 +17,8 @@ public class PlayerHealthScript : MonoBehaviour {
 	void damage(float hit){
 		GameControl.live -= hit;
 		if (GameControl.live <= 0) {
+			GameControl.live = 100;
+			GameControl.score = 0;
 			Application.LoadLevel(Application.loadedLevel);		
 		}
 
