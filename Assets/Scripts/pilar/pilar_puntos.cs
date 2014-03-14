@@ -10,6 +10,6 @@ public class pilar_puntos : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = "Vida " + GameControl.score;
+		guiText.text = "Puntos " + GameControl.score;
 	}
 }

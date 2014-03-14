@@ -36,7 +36,7 @@ public class pilar_VueloController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, goRight * transform.right, Mathf.Abs(goRight), 1 << LayerMask.NameToLayer("limit"));
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, goRight * transform.right, Mathf.Abs(goRight),1 );
 		Debug.DrawRay(transform.position, goRight * transform.right, Color.red);
 
 		if (hit || Time.time > nextloop) { 
