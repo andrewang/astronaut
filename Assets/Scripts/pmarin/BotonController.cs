@@ -24,10 +24,12 @@ public class BotonController : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){ 
 		
 		if (col.gameObject.transform.tag == "Player"){
-			anim.SetBool ("pulse", true);
-			pulsate = true;
-			plataforma.SendMessage("activar",true);
-			reactiveTime = Time.time + delay;
+			if(!pulsate){
+				anim.SetBool ("pulse", true);
+				plataforma.SendMessage("activar",true);
+				pulsate = true;
+				reactiveTime = Time.time + delay;
+			}
 		}
 	}
 }

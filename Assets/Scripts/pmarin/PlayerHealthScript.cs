@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HealthScript : MonoBehaviour {
-	public float total_health = 100f;
+public class PlayerHealthScript : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,10 +11,14 @@ public class HealthScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
 	}
 
 	void damage(float hit){
-		total_health -= hit;
-		if(total_health<0) Destroy (gameObject);
+		GameControl.live -= hit;
+		if (GameControl.live <= 0) {
+			Application.LoadLevel(Application.loadedLevel);		
+		}
+
 	}
 }

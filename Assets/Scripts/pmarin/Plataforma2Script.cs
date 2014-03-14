@@ -27,11 +27,11 @@ public class Plataforma2Script : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		distCovered = (Time.time - startTime) * speed;
-		float fracJourney = distCovered / distancia;
+		 
+		if (!pause) distCovered += Time.deltaTime * speed * 0.1f;
 
 		if(adestino && !pause){
-			transform.position = Vector3.Lerp(origen, destino, fracJourney);
+			transform.position = Vector3.Lerp(origen, destino, distCovered);
 			if(transform.position == destino){
 				adestino = false;
 				distCovered = 0;
@@ -40,7 +40,7 @@ public class Plataforma2Script : MonoBehaviour {
 			}
 
 		}else if(!adestino && !pause){
-			transform.position = Vector3.Lerp(destino, origen, fracJourney);
+			transform.position = Vector3.Lerp(destino, origen, distCovered);
 			if(transform.position == origen){
 				adestino = true;
 				distCovered = 0;
@@ -52,7 +52,7 @@ public class Plataforma2Script : MonoBehaviour {
 	}
 
   void activar(){
-		pause = false;
-		startTime = Time.time;
+		pause = !pause;
+
 	}
 }
