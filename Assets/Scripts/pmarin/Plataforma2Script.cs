@@ -10,8 +10,8 @@ public class Plataforma2Script : MonoBehaviour {
 	public bool auto =false;
 	// Use this for initialization
 	void Start () {
-		origen = transform.position.y;
-		destino = transform.position.y + ejeY;
+		//origen = transform.position.y;
+		//destino = transform.position.y + ejeY;
 	}
 	// Update is called once per frame
 	void Update () {
