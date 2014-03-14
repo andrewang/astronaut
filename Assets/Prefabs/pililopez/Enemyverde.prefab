@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
   - 60: {fileID: 6000000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Enemyverde
   m_TagString: Untagged
@@ -148,7 +149,9 @@ PolygonCollider2D:
       - {x: 2.24832535, y: -.0388660431}
       - {x: 2.17648506, y: -.856105804}
       - {x: 1.94518852, y: -1.78524399}
-      - {x: 2.01281929, y: -2.05977249}
+      - {x: 2.01961589, y: -1.86108649}
+      - {x: 1.47999609, y: -2.03044343}
+      - {x: .944510162, y: -2.24983287}
       - {x: .372610092, y: -2.18049622}
       - {x: -.236465454, y: -2.15687943}
       - {x: -2.22856903, y: -1.91683006}
@@ -194,11 +197,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920dfd2c58ada5540a675bf1e0a7bea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 4
-  maxSpeed: 3
+  velocidad: 6
+  maxSpeed: 5
   jumpForce: 30
   enemyDamage: 100
   altura: 3
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e614e96768915df4a8691bf2f0bad441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  total_health: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

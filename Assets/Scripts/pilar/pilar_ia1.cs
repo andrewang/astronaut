@@ -39,6 +39,7 @@ public class pilar_ia1 : MonoBehaviour {
 
 		if (col.gameObject.tag == "Player") {
 			col.transform.SendMessage("damage",enemyDamage);
+			Debug.Log("babosa daño");
 			col.gameObject.rigidbody2D.AddForce(_force*500f);
 		}
 	}
