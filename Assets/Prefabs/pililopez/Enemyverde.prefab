@@ -200,7 +200,7 @@ MonoBehaviour:
   velocidad: 6
   maxSpeed: 5
   jumpForce: 30
-  enemyDamage: 100
+  enemyDamage: 50
   altura: 3
 --- !u!114 &11400002
 MonoBehaviour:
