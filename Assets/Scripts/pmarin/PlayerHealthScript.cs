@@ -14,7 +14,7 @@ public class PlayerHealthScript : MonoBehaviour {
 
 	}
 
-	void damage(float hit){
+	void damage(int hit){
 		GameControl.live -= hit;
 		if (GameControl.live <= 0) {
 			GameControl.live = 100;

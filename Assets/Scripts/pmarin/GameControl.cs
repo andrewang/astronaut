@@ -2,7 +2,7 @@
 using System.Collections;
 
 public static class GameControl {
-	public static float live = 100f;
+	public static int live = 100;
 	public static bool dead = false;
 	public static int score = 0;
 	//public static bool inmortal = false;
