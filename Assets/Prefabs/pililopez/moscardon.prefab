@@ -44,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.0615196, y: 7.29086781, z: -.299072266}
+  m_LocalPosition: {x: 40.7245598, y: 2.54227543, z: -.299072266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.898986816, y: -.481985807, z: .299072266}
+  m_LocalPosition: {x: -0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -84,8 +84,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .731330395, y: .32721293}
-  m_Center: {x: -.903341293, y: -.480162382}
+  m_Size: {x: .758858263, y: .317291617}
+  m_Center: {x: .00332641602, y: .00101470947}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 2
@@ -119,7 +119,7 @@ MonoBehaviour:
   amplitudeY: 5
   omegaY: 5
   explosion: {fileID: 0}
-  velocidad: 5
+  velocidad: 2
   goRight: -1
   destroyed: 0
 --- !u!114 &11400002
