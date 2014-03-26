@@ -8,7 +8,7 @@ public class pilar_ia1 : MonoBehaviour {
 	public float jumpForce = 30f;
 	public float enemyDamage = 10f;
 	public float altura = 0.1f;
-	private float right = 1;
+	private float right = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -71,7 +71,7 @@ public class pilar_ia1 : MonoBehaviour {
 	void mediavuelta(){
 		Vector3 localx = new Vector3(transform.localScale.x * -1,transform.localScale.y,transform.localScale.z );
 		transform.localScale = localx ;
-		right *= -0.1f;
+		right *= -1f;
 		rigidbody2D.velocity = Vector3.zero;
 	}
 
